@@ -16,7 +16,6 @@ body {
   background-color: $green;
   font-family: 'Roboto', sans-serif;
   padding: 20px;
-  padding-top: 50px;
 
   h1 {
     color: $white;
@@ -35,19 +34,22 @@ body {
     gap: 30px;
     width: 70vw;
 
+    #tile1,
+    #tile2,
+    #tile3 {
+    background-color: $gray;
+    color: $white;
+}
+
     #vid {
       width: 300px;
       height: 300px;
-      background-color: plum;
+      
     }
   }
 }
 
-#tile1,
-#tile2,
-#tile3 {
-  background-color: $gray;
-}
+
 
 #hamburger {
   position: absolute;
@@ -96,5 +98,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  
+  #tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 70vw;
+  }
+
 }
